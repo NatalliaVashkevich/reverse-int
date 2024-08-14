@@ -5,14 +5,12 @@ module.exports = function reverse (n) {
    for (let i = 0; i < numToString.length; i++) {
     result = `${numToString[i]}${result}`;
   }
-    return +result;
-  } else if (n < 0) {
+ } else if (n < 0) {
     for (let i = 1; i < numToString.length; i++) {
     result = `${numToString[i]}${result}`;
   }
-    return (+result * -1);
- }
-   
+}
+return +result;   
 }
 
 
